@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Documentation Page</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main id="main-doc">
+      <nav id="navbar">
+        <header>Python Documentation</header>
+        <ul>
+          <li><a href="#Overview" class="nav-link">Overview</a></li>
+          <li>
+            <a href="#First_Python_Program" class="nav-link"
+              >First Python Program</a
+            >
+          </li>
+          <li><a href="#Variable" class="nav-link">Variable</a></li>
+          <li><a href="#Data_Type" class="nav-link">Data Type</a></li>
+          <li><a href="#Keyword" class="nav-link">Keyword</a></li>
+          <li><a href="#Literals" class="nav-link">Literals</a></li>
+          <li><a href="#Operators" class="nav-link">Operators</a></li>
+          <li><a href="#Comments" class="nav-link">Comments</a></li>
+          <li><a href="#If_Else" class="nav-link">If Else</a></li>
+          <li><a href="#Loops" class="nav-link">Loops</a></li>
+        </ul>
+      </nav>
+      <div id="main-content">
+        <section class="main-section" id="Overview">
+          <header>Overview</header>
+          <p>
+            Python is a general purpose, dynamic, high-level, and interpreted
+            programming language. It supports Object Oriented programming
+            approach to develop applications. It is simple and easy to learn and
+            provides lots of high-level data structures. Python is easy to learn
+            yet powerful and versatile scripting language, which makes it
+            attractive for Application Development. Python's syntax and dynamic
+            typing with its interpreted nature make it an ideal language for
+            scripting and rapid application development. Python supports
+            multiple programming pattern, including object-oriented, imperative,
+            and functional or procedural programming styles.
+          </p>
+        </section>
+        <section class="main-section" id="First_Python_Program">
+          <header>First Python Program</header>
+          <p>
+            Python provides us the two ways to run a program: <br />
+            <li>Using Interactive interpreter prompt</li>
+            <li>Using a script file</li>
+            <code
+              >print("hello world");<br />
+              #here, we have used print() function to print the message on the
+              console.<br
+            /></code>
+            To run this file named as first.py, we need to run the following
+            command on the terminal.
+            <code>$ python3 first.py</code>
+          </p>
+        </section>
+        <section class="main-section" id="Variable">
+          <header>Variable</header>
+          <p>
+            Variable is a name that is used to refer to memory location. Python
+            variable is also known as an identifier and used to hold value. In
+            Python, we don't need to specify the type of variable because Python
+            is a infer language and smart enough to get variable type. Variable
+            names can be a group of both the letters and digits, but they have
+            to begin with a letter or an underscore. It is recommended to use
+            lowercase letters for the variable name. Rahul and rahul both are
+            two different variables.
+          </p>
+          <h4>Identifier Naming</h4>
+          <p>
+            Variables are the example of identifiers. An Identifier is used to
+            identify the literals used in the program. The rules to name an
+            identifier are given below:
+          </p>
+          <ul>
+            <li>
+              The first character of the variable must be an alphabet or
+              underscore ( _ ).
+            </li>
+            <li>
+              All the characters except the first character may be an alphabet
+              of lower-case(a-z), upper-case (A-Z), underscore, or digit (0-9).
+            </li>
+            <li>
+              Identifier name must not contain any white-space, or special
+              character (!, @, #, %, ^, &, *).
+            </li>
+            <li>
+              Identifier name must not be similar to any keyword defined in the
+              language.
+            </li>
+            <li>
+              Identifier names are case sensitive; for example, my name, and
+              MyName is not the same.
+            </li>
+            <li>Examples of valid identifiers: a123, _n, n_9, etc.</li>
+            <li>Examples of invalid identifiers: 1a, n%4, n 9, etc.</li>
+          </ul>
+        </section>
+        <section class="main-section" id="Data_Type">
+          <header>Data Type</header>
+          <p>
+            A variable can hold different types of values. For example, a
+            person's name must be stored as a string whereas its id must be
+            stored as an integer. Python provides various standard data types
+            that define the storage method on each of them. The data types
+            defined in Python are given below.
+          </p>
+          <ol>
+            <li>Numbers</li>
+            <li>Sequence Type</li>
+            <li>Boolean</li>
+            <li>Set</li>
+            <li>Dictionary</li>
+          </ol>
+        </section>
+        <section class="main-section" id="Keyword">
+          <header>Keyword</header>
+          <p>
+            Python Keywords are special reserved words that convey a special
+            meaning to the compiler/interpreter. Each keyword has a special
+            meaning and a specific operation. These keywords can't be used as a
+            variable. Following is the List of Python Keywords.<br />
+            True False None and as asset def class continue break else finally
+            elif del except global for if from import raise try or return pass
+            nonlocal in not is lambda
+          </p>
+        </section>
+        <section class="main-section" id="Literals">
+          <header>Literals</header>
+          <p>
+            Python Literals can be defined as data that is given in a variable
+            or constant. Python supports the following literals:
+          </p>
+          <ol>
+            <li>
+              <h4>String literals:</h4>
+              <p>
+                String literals can be formed by enclosing a text in the quotes.
+                We can use both single as well as double quotes to create a
+                string.
+                <code>"Aman" , '12345'</code>
+              </p>
+            </li>
+            <li>
+              <h4>Numeric literals:</h4>
+              <p>
+                Numeric Literals are immutable. Numeric literals can belong to
+                following four different numerical types.
+                <code>
+                  x = 0b10100 #Binary Literals<br />
+                  y = 100 #Decimal Literal <br />
+                  z = 0o215 #Octal Literal <br />
+                  u = 0x12d #Hexadecimal Literal<br />
+
+                  #Float Literal <br />
+                  float_1 = 100.5 <br />
+                  float_2 = 1.5e2 <br />
+
+                  #Complex Literal <br />
+                  a = 5+3.14j <br />
+
+                  print(x, y, z, u)<br />
+                  print(float_1, float_2)<br />
+                  print(a, a.imag, a.real)<br
+                /></code>
+
+                Output: <br />
+                <code
+                  >20 100 141 301<br />
+                  100.5 150.0<br />
+                  (5+3.14j) 3.14 5.0<br
+                /></code>
+              </p>
+            </li>
+            <li>
+              <h4>Boolean literals:</h4>
+              <p>
+                A Boolean literal can have any of the two values: True or
+                False.<br />
+                <code>
+                  x = (1 == True)<br />
+                  y = (2 == False) <br />
+                  z = (3 == True) <br />
+                  a = True + 10 <br />
+                  b = False + 10 <br /><br />
+
+                  print("x is", x) <br />
+                  print("y is", y) <br />
+                  print("z is", z) <br />
+                  print("a:", a) <br />
+                  print("b:", b)<br /> </code
+                ><br />
+                Output:<br />
+                <code>
+                  x is True<br />
+                  y is False<br />
+                  z is False<br />
+                  a: 11<br />
+                  b: 10<br /> </code
+                ><br />
+              </p>
+            </li>
+            <li>
+              <h4>Special literals.</h4>
+              <p>
+                Python contains one special literal i.e., None. None is used to
+                specify to that field that is not created. It is also used for
+                the end of lists in Python.<br /><br />
+                <code
+                  >val1=10 <br />
+                  val2=None <br />
+                  print(val1) <br />
+                  print(val2)<br />
+                </code>
+                Output: <br />
+                10<br />
+                None<br />
+              </p>
+            </li>
+            <li>
+              <h4>Literal Collections.</h4>
+              <ul>
+                <li>List</li>
+                <li>Dictionary</li>
+                <li>Set</li>
+                <li>Tuple</li>
+              </ul>
+            </li>
+          </ol>
+        </section>
+        <section class="main-section" id="Operators">
+          <header>Operators</header>
+          <p>
+            The operator can be defined as a symbol which is responsible for a
+            particular operation between two operands. Operators are the pillars
+            of a program on which the logic is built in a specific programming
+            language. Python provides a variety of operators, which are
+            described as follows.
+          </p>
+          <ul>
+            <li>Arithmetic operators</li>
+            <li>Comparison operators</li>
+            <li>Assignment Operators</li>
+            <li>Logical Operators</li>
+            <li>Bitwise Operators</li>
+            <li>Membership Operators</li>
+            <li>Identity Operators</li>
+          </ul>
+        </section>
+        <section class="main-section" id="Comments">
+          <header>Comments</header>
+          <p>
+            Python Comment is an essential tool for the programmers. Comments
+            are generally used to explain the code. We can easily understand the
+            code if it has a proper explanation. A good programmer must use the
+            comments because in the future anyone wants to modify the code as
+            well as implement the new module; then, it can be done easily.
+            <br /><br />
+            In the other programming language such as C++, It provides the //
+            for single-lined comment and /*.... */ for multiple-lined comment,
+            but Python provides the single-lined Python comment. To apply the
+            comment in the code we use the hash(#) at the beginning of the
+            statement or code.
+            <code
+              ># This is the print statement<br />
+              print("Hello Python") <br
+            /></code>
+
+            Here we have written comment over the print statement using the
+            hash(#). It will not affect our print statement.
+          </p>
+        </section>
+        <section class="main-section" id="If_Else">
+          <header>If Else</header>
+          <p>
+            Decision making is the most important aspect of almost all the
+            programming languages. As the name implies, decision making allows
+            us to run a particular block of code for a particular decision.
+            Here, the decisions are made on the validity of the particular
+            conditions. Condition checking is the backbone of decision making.
+            In python, decision making is performed by the following statements.
+          </p>
+          <h4>If Statement</h4>
+          <p>
+            The if statement is used to test a specific condition. If the
+            condition is true, a block of code (if-block) will be executed.
+          </p>
+          <h4>If - else Statement</h4>
+          <p>
+            The if-else statement is similar to if statement except the fact
+            that, it also provides the block of the code for the false case of
+            the condition to be checked. If the condition provided in the if
+            statement is false, then the else statement will be executed.
+          </p>
+          <h4>Nested if Statement</h4>
+          <p>
+            Nested if statements enable us to use if ? else statement inside an
+            outer if statement.
+          </p>
+        </section>
+        <section class="main-section" id="Loops">
+          <header>Loops</header>
+          <p>
+            The flow of the programs written in any programming language is
+            sequential by default. Sometimes we may need to alter the flow of
+            the program. The execution of a specific code may need to be
+            repeated several numbers of times. For this purpose, The programming
+            languages provide various types of loops which are capable of
+            repeating some specific code several numbers of times. Consider the
+            following diagram to understand the working of a loop statement.
+          </p>
+
+          <h4>for loop</h4>
+          <p>
+            The for loop is used in the case where we need to execute some part
+            of the code until the given condition is satisfied. The for loop is
+            also called as a per-tested loop. It is better to use for loop if
+            the number of iteration is known in advance.
+          </p>
+          <h4>while loop</h4>
+          <p>
+            The while loop is to be used in the scenario where we don't know the
+            number of iterations in advance. The block of statements is executed
+            in the while loop until the condition specified in the while loop is
+            satisfied. It is also called a pre-tested loop.
+          </p>
+          <h4>do-while loop</h4>
+          <p>
+            The do-while loop continues until a given condition satisfies. It is
+            also called post tested loop. It is used when it is necessary to
+            execute the loop at least once (mostly menu driven programs).
+          </p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
